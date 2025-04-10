@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+    --color-pri: #4a90e2;
+    --color-pri1: #6abf69;
+    --color-pri2: #5bc0be;
+    --color-pri3: #f9c74f;
+    --color-pri3: #c0e0e5;
+    --color-pri4: #a58db1;
+    --color-pri5: #f3722c;
+}
+
 *{
     font-family: "Albert sans", sans-serif;
     margin: 0; padding: 0;
@@ -7,6 +17,15 @@
 
 .container{
     margin: 0 5rem;
+}
+
+.flex{
+    display: flex;
+    gap: .4rem;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
 }
 
 main{
@@ -17,4 +36,87 @@ main{
 
 header{
     padding: 4rem 0;
+}
+
+section.drug-details{
+    padding: 1.2rem;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    line-height: 1.5;
+
+    display: flex; flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+section.drug-details button{
+    border-radius: 10em; padding: .2rem;
+    background-color: none;
+    color: var(--color-pri);
+    border-color: var(--color-pri);
+    outline: none;
+}
+.search-main button{
+    border-radius: 10em; padding: .2rem;
+    background-color: none;
+    color: var(--color-pri); cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+section.drug-details input{
+    border-radius: 10em; padding: .2rem;
+    background-color: none;
+    color: var(--color-pri);
+    border-color: var(--color-pri);
+    outline: none;
+
+    padding-left: .8rem;
+}
+
+.search-main{
+    max-width: 70%;
+    border: 1px solid var(--color-pri);
+    border-radius: .2rem;
+    padding: .2rem;
+    margin-bottom: 1.6rem;
+}
+
+.search-main input{
+    border: none;
+    flex-grow: 1;
+    background-color: none;
+    color: var(--color-pri);
+    outline: none;
+
+    padding-left: .8rem;
+}
+
+    .drug-item .the-form{
+        padding-left: .4rem;
+        margin: .4rem 0;
+        border-left: 2px solid;
+        color: var(--color-pri4);
+    }
+
+    .d-lists .item{
+        padding: .4rem 0;
+        width: 75%;
+        gap: 2.4rem;
+    }.d-lists .item span:nth-of-type(1){
+        flex-grow: 1;
+        /* font-size: 1.2rem;
+        font-weight: bold; */
+
+    }
+
+section.drug-details h3{
+    padding-top: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+section.drug-details footer{
+    padding: 1.2rem 0;
+    font-size: .8rem;
+    color: var(--color-pri4);
 }
